@@ -904,8 +904,7 @@
 </section>
 
 <!-- LEAD FORM -->
-<form class="lead-form-section" id="contact" aria-labelledby="contact-title" 
-action="https://api.web3forms.com/submit" method="POST">
+<section class="lead-form-section" id="contact" aria-labelledby="contact-title" >
   <div class="form-left">
     <span class="section-tag">GET IN TOUCH</span>
     <h2 id="contact-title">Let's Build Your Dream Website Together</h2>
@@ -924,13 +923,14 @@ action="https://api.web3forms.com/submit" method="POST">
     </div>
   </div>
 
-  <div class="lead-form">
+  <form class="lead-form" action="https://api.web3forms.com/submit" method="POST">
+     <input type="hidden" name="access_key" value="46f52146-9254-4092-b088-d67ce2f8f356">
     <div class="form-title">Get Your Free Consultation</div>
     <div class="form-row">
       <div class="form-group">
         <label for="fname">Your Name *</label>
-         <input type="hidden" name="access_key" value="46f52146-9254-4092-b088-d67ce2f8f356">
-        <input type="text" name="full name" required id="fname" placeholder="Enter your name" autocomplete="name">
+        
+        <input type="text" name="full_name" required id="fname" placeholder="Enter your name" autocomplete="name">
       </div>
       <div class="form-group">
         <label for="fphone">Phone / WhatsApp *</label>
@@ -943,7 +943,7 @@ action="https://api.web3forms.com/submit" method="POST">
     </div>
     <div class="form-group">
       <label for="fbiz">Business Type *</label>
-      <input type="text" id="fbiz" name="business type" placeholder="e.g. Restaurant, Clinic, E-commerce...">
+      <input type="text" id="fbiz" name="business_type" placeholder="e.g. Restaurant, Clinic, E-commerce...">
     </div>
     <div class="form-group">
       <label for="fplan">Which Plan Are You Interested In?</label>
@@ -958,17 +958,17 @@ action="https://api.web3forms.com/submit" method="POST">
     </div>
     <div class="form-group">
       <label for="fmsg">Tell Us About Your Project</label>
-      <textarea id="fmsg" name="Tell Us About Your Project" rows="3" placeholder="Brief description of what you need..."></textarea>
+      <textarea id="fmsg" name="About_Your_Project" rows="3" placeholder="Brief description of what you need..."></textarea>
     </div>
-    <button class="form-submit" id="submitBtn" onclick="submitForm()">
+    <button class="form-submit" id="submitBtn" >
        Get My Free Consultation Now
     </button>
     <div class="success-msg" id="successMsg">
-      <p>✅ Thank you! Our team will contact you within 24 hours.</p>
+      <p>Thank you! Our team will contact you within 24 hours.</p>
     </div>
     <p class="form-note">🔒 Your information is 100% secure and will never be shared.</p>
-  </div>
-</form>
+  </form>
+</section>
 
 <!-- FOOTER -->
 <footer role="contentinfo">
